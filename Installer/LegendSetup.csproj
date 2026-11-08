@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+    <RootNamespace>LegendSetup</RootNamespace>
+    <AssemblyName>LegendSetup</AssemblyName>
+    <ApplicationIcon>Assets\Legend.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <AssemblyTitle>Legend Setup</AssemblyTitle>
+    <Product>Legend</Product>
+    <Company>Legend</Company>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Legend.ico" />
+    <EmbeddedResource Include="payload.zip" Condition="Exists('payload.zip')">
+      <LogicalName>payload.zip</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

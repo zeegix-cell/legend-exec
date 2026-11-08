@@ -1,0 +1,10 @@
+/bin/
+/obj/
+/dist/
+/release/
+/.vs/
+/Installer/bin/
+/Installer/obj/
+/Installer/payload.zip
+*.user
+*.suo
